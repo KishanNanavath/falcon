@@ -3,7 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Kishan Nanavath Resume</title>
+    <title>mSupply Leave Portal</title>
+    <link rel="icon" href="http://www.msupply.com/media/favicon/default/fav_icon-01.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 
@@ -31,13 +32,7 @@
         </div>
     </md-toolbar>
 
-    <!--<div data-ng-include="'./Partials/login.html'"></div>-->
-
-    <md-card>
-        <md-card-container>
-
-        </md-card-container>
-    </md-card>
+    <div data-ng-include="'./Partials/login.html'"></div>
 
     <md-card>
         <md-card-content>
@@ -45,7 +40,6 @@
                 <h4>Leave duration</h4>
                 <md-datepicker ng-model="startDate" format="dd/MM/yyyy" md-placeholder="Start date"></md-datepicker>
                 <md-datepicker ng-model="endDate" format="dd/MM/yyyy" md-placeholder="End date"></md-datepicker>
-                <h1 ng-if="startDate !== undefined && endDate !== undefined">{{endDate.getDate()-startDate.getDate()}} Days</h1>
             </div>
         </md-card-content>
     </md-card>
